@@ -2,9 +2,9 @@
     "deploys": [{
         "name": "Webhook Deployer",
         "type": "github",
-        "repo": "https://github.com/dmitrym0/readium-shared-js/",
-        "basepath": "/Users/dmitry/workspace/github/webhook-deployer",
-        "command": "git pull",
+        "repo": "https://github.com/dmitrym0/readium-shared-js",
+        "basepath": "/tmp/readium-shared-js",
+        "command": "VERSION=`git describe` && sed -i '' -e \"s/version.*/version = \\\"${VERSION}\\\",/\" readium-module.json && git commit -am \"Auto version update\" && git push",
         "branch": "develop"
     }]
 }
