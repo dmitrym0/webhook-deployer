@@ -2,9 +2,9 @@
     "deploys": [{
         "name": "Webhook Deployer",
         "type": "github",
-        "repo": "https://github.com/Camme/webhook-deployer",
-        "basepath": "/Users/camilo/Projects/24hr-deployer",
+        "repo": "https://github.com/dmitrym0/readium-shared-js/",
+        "basepath": "/Users/dmitry/workspace/github/webhook-deployer",
         "command": "git pull",
-        "branch": "master"
+        "branch": "develop"
     }]
 }
